@@ -9,18 +9,19 @@ $theme-color-config: 'Default';
 
 // Default theme color map
 $theme-color-map: (
-  'Default': #c05b4d #f8f5ec,
-  'Mint Green': #16982B #f5f5f5,
-  'Cobalt Blue': #0047AB #f0f2f5,
-  'Hot Pink': #FF69B4 #f8f5f5,
-  'Dark Violet': #9932CC #f5f4fa
+    'Default': #c05b4d #f8f5ec,
+    'Mint Green': #16982B #f5f5f5,
+    'Cobalt Blue': #0047AB #f0f2f5,
+    'Hot Pink': #FF69B4 #f8f5f5,
+    'Dark Violet': #9932CC #f5f4fa
 );
 
 // Check theme color config.
 // if it does not exist, use default theme color.
 @if not(map-has-key($theme-color-map, $theme-color-config)) {
-  $theme-color-config: 'Default';
+    $theme-color-config: 'Default';
 }
+
 $theme-color-list: map-get($theme-color-map, $theme-color-config);
 
 // Default theme color of the site.
@@ -49,10 +50,10 @@ $global-font-size: 18px !default;
 $global-body-width: 1080px !default;
 
 // Padding of container main
-$global-container-padding: 0 20px !default;
+$global-container-padding: 0 10px !default;
 
 // Default line height for all type. `$global-lineheight` is 24px while `$global-font-size` is 16px.
-$global-lineheight: 1.8 !default;
+$global-lineheight: 1.6 !default;
 
 // Font family of the site.
 $global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
@@ -65,13 +66,12 @@ $global-background: $white !default;
 
 // Headings font size of the site.
 $global-headings: (
-  h1: 1.6em,
-  h2: 1.5em,
-  h3: 1.3em,
-  h4: 1.2em,
-  h5: 1.1em,
-  h6: 1em
-) !default;
+    h1: 1.4em,
+    h2: 1.3em,
+    h3: 1.2em,
+    h4: 1.1em,
+    h5: 1.0em,
+    h6: 0.9em) !default;
 
 
 // ========== Header ========== //
@@ -79,7 +79,9 @@ $global-headings: (
 $logo-font-size: 36px !default;
 
 // Font family of the logo.
-$logo-font-family: cursive, LiSu, sans-serif !default;
+$logo-font-family: cursive,
+    LiSu,
+    sans-serif !default;
 
 // Margin of menu item.
 $menu-item-margin-left: 10px !default;
@@ -174,23 +176,27 @@ $content-table-border-color: darken($deputy-color, 3%) !default;
 $code-color: #c7254e !default;
 
 // Font size of code.
-$code-font-size: 0.9em !default;
+$code-font-size: 0.6em !default;
 
 // Font family of the code.
-$code-font-family: Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco, "Courier New",
- monospace !default;
+$code-font-family: Menlo,
+    Consolas,
+    "Source Code Pro",
+    Inconsolata,
+    Monaco,
+    "Courier New",
+    monospace !default;
 
 // Color of code highlight, solarized.
 $code-highlight-color: (
-  comment: #93a1a1,
-  keyword: #859900,
-  number: #2aa198,
-  title: #268bd2,
-  attribute: #b58900,
-  symbol: #cb4b16,
-  built_in: #dc322f,
-  formula: #eee8d5
-) !default;
+    comment: #93a1a1,
+    keyword: #859900,
+    number: #2aa198,
+    title: #268bd2,
+    attribute: #b58900,
+    symbol: #cb4b16,
+    built_in: #dc322f,
+    formula: #eee8d5) !default;
 
 
 // Color of the code background.
@@ -199,7 +205,7 @@ $code-background: $deputy-color !default;
 
 // ========== Pagination ========== //
 // Margin of the pagination.
-$pagination-margin: 2em 0 !default;
+$pagination-margin: 1em 0 !default;
 
 // Font size of the pagination (Without post, post pagination see line 140).
 $pagination-font-size: 20px !default;
