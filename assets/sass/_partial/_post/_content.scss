@@ -50,6 +50,8 @@
 
     .post-summary {
         margin-bottom: 1em;
+        max-height: 300px;
+        overflow: hidden;
     }
 
     .read-more {
