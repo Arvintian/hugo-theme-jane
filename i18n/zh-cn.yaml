@@ -42,10 +42,10 @@
   translation: 赞赏支持
 
 - id: rewardAlipay
-  translation: 支付宝打赏
+  translation: 支付宝赞赏
 
 - id: rewardWechat
-  translation: 微信打赏
+  translation: 微信赞赏
 
 - id: seeMarkDown
   translation: 查看本文 Markdown 版本 »
